@@ -1,4 +1,5 @@
 import { Link, useNavigate } from 'react-router-dom';
+import './NavBar.css';
 import { Button } from 'react-bootstrap';
 import { useContext, useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
@@ -57,7 +58,7 @@ export function NavBar() {
             <header className="mb-auto">
               <div>
                 <Link to={'/'}>
-                  <h3 className="float-md-start mb-0">Wordle</h3>
+                  <h3 className="float-md-start mb-0" id="home_link">Wordle</h3>
                 </Link>
                 <nav className="nav nav-masthead justify-content-center float-md-end">
                   <Button variant="secondary" onClick={handleShowHelpModal}>
