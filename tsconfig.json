@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+      "outDir": "./wordle_server/dist",
+      "baseUrl": "./wordle_server/src",
+      "moduleResolution": "node",
+      "allowSyntheticDefaultImports": true,
+      "esModuleInterop": true,
+      "target": "ES2019",
+      "lib": ["dom", "es2020"],
+      "module": "commonjs"
+    },
+    "include": [
+      "./wordle_server/src/**/*.ts"
+    ],
+    "exclude": [
+      "./wordle_server/src/**/*.test.ts"
+    ]
+  }
