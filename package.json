@@ -28,8 +28,6 @@
     "startserver": "npm run buildserver && node wordle_server/dist/index.js",
     "startclient": "cd wordle_client && npm start",
     "start": "concurrently \"npm run startserver\" \"npm run startclient\"",
-    "read-users": "ts-node wordle_server/src/demos/users.ts",
-    "show-env": "ts-node wordle_server/src/demos/env.ts"
   },
   "eslintConfig": {
     "extends": [
