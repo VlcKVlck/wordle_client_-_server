@@ -1,0 +1,82 @@
+.site {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.displayBlocks {
+  background-color: rgba(169, 178, 227, 0.91);
+  border: 1px darkgray solid;
+  border-radius: 5px;
+  height: 10vh;
+  width: 10vh;
+  box-shadow: 1px 1px lightgray;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  :focus {
+    border: 3px black solid;
+  }
+}
+
+.green {
+  background-color: green;
+}
+.orange {
+  background-color: orange;
+}
+.grey {
+  background-color: gray;
+}
+
+.KeyboardInput {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10vh;
+  overflow-y: clip;
+  overflow-x: clip;
+  font-weight: bolder;
+}
+.letters {
+  display: inline;
+  padding: 0;
+  margin: 3px 1px 1px 1px;
+  border: 1px darkgray solid;
+  border-radius: 5px;
+  height: 7vh;
+  width: 7vh;
+  box-shadow: 1px 1px lightgray;
+  font-weight: bolder;
+  animation-duration: 4s;
+}
+button img {
+  height: 1.5vh;
+}
+.widerbutton {
+  width: 11vh;
+}
+button:active {
+  transform: translateY(1px);
+  color: white;
+  border: none;
+}
+button:hover {
+  background-color: #698ae7;
+  cursor: pointer;
+}
+
+@keyframes example {
+  from {
+    background-color: #0004ff;
+  }
+  to {
+    background-color: yellow;
+  }
+}
