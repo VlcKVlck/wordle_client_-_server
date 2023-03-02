@@ -4,7 +4,7 @@
 This wordle game was the final project of my full stack course.
 It implements the basic requirements of the project (as required by the project PRD), as well as more eleborate features, such as word checking APIs, game configuration, a user database, game scoring, password hashing and JWT based access control.
 
-To run the game, you'll need to have MongoDB installed. Create a database called "wordle" (all small letters). Then clone this repo locally, run `npm install` in the main folder, and then run `npm start`. This will run both server and client. If you need to run `npm start` start again, you will get errors telling you the database exists. You can ignore the errors, or alternatively you can delete the table or comment out line 14 of wordle_server/index.ts (`await initializeDB ();`).
+To run the game, you'll need to have postgres installed. Create a database called "wordle" (all small letters). Then clone this repo locally, run `npm install` in the main folder, and then run `npm start`. This will run both server and client. If you need to run `npm start` start again, you will get errors telling you the database exists. You can ignore the errors, or alternatively you can delete the table or comment out line 14 of wordle_server/index.ts (`await initializeDB ();`).
 
 Words are checked against a dictionary API, and word to play with is generated through a random-words npm package. The client is written in JS, with elaborate server in TypeScript. 
  `npm start` for both server and client will run the app.
